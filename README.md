@@ -1,4 +1,4 @@
-#Paper-to-audio
+# Paper to audio
 
 Simple conversion of pdf to audio using LLM calls. 
 `paper2audio_gemini.ipynb` contains all necessary code to load a pdf and save it to a .wav audio file. Requires gemini API key. 
