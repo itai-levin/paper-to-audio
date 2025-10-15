@@ -3,15 +3,22 @@ name = "paper2audio"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
+    "ffmpeg-python>=0.2.0",
     "google-genai>=1.27.0",
     "ipykernel>=6.30.0",
+    "kittentts",
     "openai>=1.98.0",
+    "pydub>=0.25.1",
     "tiktoken>=0.9.0",
+    "tts",
 ]
 
 [dependency-groups]
 dev = [
     "ipykernel>=6.30.0",
 ]
+
+[tool.uv.sources]
+kittentts = { url = "https://github.com/KittenML/KittenTTS/releases/download/0.1/kittentts-0.1.0-py3-none-any.whl" }
